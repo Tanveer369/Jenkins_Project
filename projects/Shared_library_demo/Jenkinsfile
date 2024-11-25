@@ -6,7 +6,7 @@ pipeline {
         stage('Code Checkout') {
             steps {
                 script {
-                  def workingDir = checkoutCode("https://github.com/Tanveer369/game.git", "main")
+                  def workingDir = checkoutgit("https://github.com/Tanveer369/game.git", "main")
                   echo $workingDir
                 }
             }
