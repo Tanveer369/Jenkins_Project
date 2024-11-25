@@ -7,7 +7,9 @@ pipeline {
             steps {
                 script {
                   def workingDir = checkoutgit("https://github.com/Tanveer369/game.git", "main")
-                  echo $workingDir
+                  sh '''
+                      ls -ltr
+                  '''
                 }
             }
         }
