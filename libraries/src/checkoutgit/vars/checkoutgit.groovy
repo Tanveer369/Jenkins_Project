@@ -1,4 +1,3 @@
-// vars/checkoutRepo.groovy
 def call(String repoUrl, (String branch) {
     checkout([
         $class: 'GitSCM', 
